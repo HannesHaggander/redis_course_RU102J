@@ -87,7 +87,6 @@ public class SiteDaoRedisImplTest {
      * Be sure to uncomment the @Ignore line first.
      */
     @Test
-    @Ignore
     public void findAllWithMultipleSites() {
         SiteDaoRedisImpl dao = new SiteDaoRedisImpl(jedisPool);
         // Insert all sites
@@ -105,7 +104,6 @@ public class SiteDaoRedisImplTest {
      * Be sure to uncomment the @Ignore line first.
      */
     @Test
-    @Ignore
     public void findAllWithEmptySites() {
         SiteDaoRedisImpl dao = new SiteDaoRedisImpl(jedisPool);
         assertThat(dao.findAll(), is(empty()));
